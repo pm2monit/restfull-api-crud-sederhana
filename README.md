@@ -13,3 +13,10 @@ Untuk menjalankan restfull api service ini harap ikuti langkah-langkah berikut :
     2.7. Untuk melihat list proses application: pada terminal / command promt (CMD) ketik `pm2 list` <br>
     2.8. Untuk melihat log application: pada terminal / command promt (CMD) ketik `pm2 logs` atau `pm2 monit` <br>
 3. Jika setting sudah sesuai dan tidak ada error, silahkan buka postman dan import file `API sederhana untuk aplikasi manajemen tugas.postman_collection.json`
+4. Route : 
+    4.1. Dapatkan semua data : http://localhost:3000/tugas => method: GET<br>
+    4.2. Dapatkan data berdasarkan id: http://localhost:3000/task/:id (id di isi sesuai dengan data yang ada pada saat ambil semua data) => method: GET <br>
+    4.3. Membuat data baru: http://localhost:3000/tugas => method: POST, parameter body : judul: STRING, desc: string <br>
+    4.4. Update data : http://localhost:3000/task/:id (id di isi sesuai dengan data yang ada pada saat ambil semua data) => method: PUT <br>
+    4.4. Hapus data : http://localhost:3000/task/:id (id di isi sesuai dengan data yang ada pada saat ambil semua data) => method: DELETE 
+
